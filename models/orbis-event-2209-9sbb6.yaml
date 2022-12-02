@@ -1,0 +1,6 @@
+name: ORBIS_EVENT_2209_読み物の記事詳細を表示
+source: orbis-poc
+type: table
+tableName: PUBLIC.読み物の記事詳細を表示_202209
+isSchema: false
+primaryKey: ID

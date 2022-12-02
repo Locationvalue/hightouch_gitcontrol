@@ -1,0 +1,39 @@
+model: public-view-07-million-job-20000000-24000000
+destination: amplitude-bne-prod
+config:
+  type: event
+  mappings: []
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: 消費元気
+      from: vitality
+      type: standard
+    - to: リタイアフラグ
+      from: retire_flag
+      type: standard
+    - to: お仕事タイプ
+      from: job_type
+      type: standard
+    - to: お仕事名
+      from: job_name
+      type: standard
+    - to: お仕事ID
+      from: mst_job_id
+      type: standard
+    - to: BNID
+      from: bnid
+      type: standard
+    - to: service_user_id
+      from: service_user_id
+      type: standard
+    - to: サービス名
+      from: service_name
+      type: standard
+  skipUserProperty: true
+schedule:
+  type: manual
+schedulePaused: false

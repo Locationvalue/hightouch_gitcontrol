@@ -1,0 +1,6 @@
+name: Hightouch to Amplitude UP
+source: b2-c-e-commerce-y0hyw
+type: table
+tableName: public.customers
+isSchema: false
+primaryKey: customer_id

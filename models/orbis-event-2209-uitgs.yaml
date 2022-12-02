@@ -1,0 +1,6 @@
+name: ORBIS_EVENT_2209_ベストコスメ受賞一覧を表示
+source: orbis-poc
+type: table
+tableName: PUBLIC.ベストコスメ受賞一覧を表示_202209
+isSchema: false
+primaryKey: ID

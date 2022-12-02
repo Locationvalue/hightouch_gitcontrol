@@ -1,0 +1,74 @@
+model: orbis-event-anbye
+destination: orbis-poc-hszov
+config:
+  type: event
+  mappings:
+    - to: price
+      from: $price
+      type: standard
+    - to: quantity
+      from: $quantity
+      type: standard
+    - to: productId
+      from: $productId
+      type: standard
+    - to: revenueType
+      from: $revenueType
+      type: standard
+  eventName: 購買（商品毎）
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: 受注明細状態区分
+      from: 受注明細状態区分
+      type: standard
+    - to: 受注状態区分
+      from: 受注状態区分
+      type: standard
+    - to: OrderComplete_リピートSampleNGフラグ
+      from: OrderComplete_リピートSampleNGフラグ
+      type: standard
+    - to: OrderComplete_Sample請求NGフラグ
+      from: OrderComplete_Sample請求NGフラグ
+      type: standard
+    - to: OrderComplete_定期購入対象フラグ
+      from: OrderComplete_定期購入対象フラグ
+      type: standard
+    - to: OrderComplete_特別品番フラグ
+      from: OrderComplete_特別品番フラグ
+      type: standard
+    - to: OrderComplete_商品タイプ名
+      from: OrderComplete_商品タイプ名
+      type: standard
+    - to: OrderComplete_種別
+      from: OrderComplete_種別
+      type: standard
+    - to: OrderComplete_構成商品区分
+      from: OrderComplete_構成商品区分
+      type: standard
+    - to: OrderComplete_商品区分
+      from: OrderComplete_商品区分
+      type: standard
+    - to: OrderComplete_商品分野区分
+      from: OrderComplete_商品分野区分
+      type: standard
+    - to: OrderComplete_分析小分類コード
+      from: OrderComplete_分析小分類コード
+      type: standard
+    - to: OrderComplete_分析中分類コード
+      from: OrderComplete_分析中分類コード
+      type: standard
+    - to: OrderComplete_分析大分類コード
+      from: OrderComplete_分析大分類コード
+      type: standard
+    - to: OrderComplete_基本分類コード
+      from: OrderComplete_基本分類コード
+      type: standard
+    - to: OrderComplete_商品名
+      from: OrderComplete_商品名
+      type: standard
+  skipUserProperty: true
+schedule:
+  type: manual
+schedulePaused: false

@@ -1,0 +1,6 @@
+name: PUBLIC.VIEW_07_million_job_32000000_36000000
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.VIEW_07_million_job_32000000_36000000
+isSchema: false
+primaryKey: ID

@@ -1,0 +1,6 @@
+name: ORBIS_EVENT_キャンペーン一覧を表示
+source: orbis-poc
+type: table
+tableName: PUBLIC.キャンペーン一覧を表示
+isSchema: false
+primaryKey: ID

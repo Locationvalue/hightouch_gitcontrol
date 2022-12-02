@@ -1,0 +1,19 @@
+model: hightouch-to-amplitude-up-dk2or
+destination: amplitude-scu-43qpi
+config:
+  type: object
+  object: user
+  mappings: []
+  configVersion: 0
+  customMappings:
+    - to: 興味関心
+      from: brand_affinity
+    - to: LTV
+      from: ltv
+  externalIdMapping:
+    to: user_id
+    from: customer_id
+    type: standard
+schedule:
+  type: manual
+schedulePaused: false

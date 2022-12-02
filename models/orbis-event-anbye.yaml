@@ -1,0 +1,6 @@
+name: ORBIS_EVENT_購買（商品毎）
+source: orbis-poc
+type: table
+tableName: PUBLIC.購買（商品毎）
+isSchema: false
+primaryKey: ID

@@ -1,0 +1,111 @@
+model: orbis-up-user-property-mposx
+destination: orbis-poc-hszov
+config:
+  type: object
+  object: user
+  mappings: []
+  configVersion: 0
+  customMappings:
+    - to: F1獲得媒体
+      from: F1獲得媒体
+      type: standard
+    - to: F0獲得媒体
+      from: F0獲得媒体
+      type: standard
+    - to: F1獲得媒体区分
+      from: F1獲得媒体区分
+      type: standard
+    - to: F0獲得媒体区分
+      from: F0獲得媒体区分
+      type: standard
+    - to: F1獲得プロモコード
+      from: F1獲得プロモコード
+      type: standard
+    - to: F1獲得プロモ番号
+      from: F1獲得プロモ番号
+      type: standard
+    - to: F0獲得プロモコード
+      from: F0獲得プロモコード
+      type: standard
+    - to: F0獲得プロモ番号
+      from: F0獲得プロモ番号
+      type: standard
+    - to: 獲得経路区分
+      from: 獲得経路区分
+      type: standard
+    - to: 店舗_累計受注回数
+      from: 店舗_累計受注回数
+      type: standard
+    - to: 通販_累計受注回数
+      from: 通販_累計受注回数
+      type: standard
+    - to: 全体_累計受注回数
+      from: 全体_累計受注回数
+      type: standard
+    - to: 店舗_累計受注額_純売上
+      from: 店舗_累計受注額_純売上
+      type: standard
+    - to: 通販_累計受注額_純売上
+      from: 通販_累計受注額_純売上
+      type: standard
+    - to: 全体_累計受注額_純売上
+      from: 全体_累計受注額_純売上
+      type: standard
+    - to: 店舗DM拒否フラグ
+      from: 店舗DM拒否フラグ
+      type: standard
+    - to: 通販DM送付区分
+      from: 通販DM送付区分
+      type: standard
+    - to: 携帯メール拒否フラグ
+      from: 携帯メール拒否フラグ
+      type: standard
+    - to: PC販促メール拒否フラグ
+      from: PC販促メール拒否フラグ
+      type: standard
+    - to: ポイント残高
+      from: ポイント残高
+      type: standard
+    - to: 通店初回受注日
+      from: 通店初回受注日
+      type: standard
+    - to: 店舗初回購入日
+      from: 店舗初回購入日
+      type: standard
+    - to: 通販初回受注日
+      from: 通販初回受注日
+      type: standard
+    - to: 会員ランク
+      from: 会員ランク
+      type: standard
+    - to: 会員登録日
+      from: 会員登録日
+      type: standard
+    - to: 都道府県
+      from: 都道府県
+      type: standard
+    - to: 年齢
+      from: 年齢
+      type: standard
+    - to: ネット顧客区分
+      from: ネット顧客区分
+      type: standard
+    - to: 名寄せ後顧客番号
+      from: 名寄せ後顧客番号
+      type: standard
+    - to: 店舗ポイントカードID
+      from: 店舗ポイントカードID
+      type: standard
+    - to: 会員ID
+      from: 会員ID
+      type: standard
+    - to: 顧客番号
+      from: 顧客番号
+      type: standard
+  externalIdMapping:
+    to: user_id
+    from: 顧客番号
+    type: standard
+schedule:
+  type: manual
+schedulePaused: true

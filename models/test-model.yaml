@@ -1,0 +1,10 @@
+name: test model
+source: orbis-poc
+type: raw_sql
+rawSql: |-
+  SELECT
+    *
+  FROM
+    "ORBIS_POC"."PUBLIC"."購買（商品毎）";
+isSchema: false
+primaryKey: ID

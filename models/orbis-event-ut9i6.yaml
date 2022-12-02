@@ -1,0 +1,6 @@
+name: ORBIS_EVENT_お悩み解決ベースメイクチェックを表示
+source: orbis-poc
+type: table
+tableName: PUBLIC.お悩み解決ベースメイクチェックを表示
+isSchema: false
+primaryKey: ID

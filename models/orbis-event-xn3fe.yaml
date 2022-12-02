@@ -1,0 +1,6 @@
+name: ORBIS_EVENT_スキンケアラウンジを表示
+source: orbis-poc
+type: table
+tableName: PUBLIC.スキンケアラウンジを表示
+isSchema: false
+primaryKey: ID

@@ -1,0 +1,19 @@
+model: hight-touch-to-amplitude-test-lswmj
+destination: amplitude-scu-43qpi
+config:
+  type: event
+  mappings: []
+  eventName: TEST(Hightouch)_222
+  userIdFrom: customer_id
+  configVersion: 0
+  customMappings:
+    - to: Brand
+      from: brand
+    - to: 商品名
+      from: product_name
+    - to: 品番
+      from: sku
+  skipUserProperty: true
+schedule:
+  type: manual
+schedulePaused: false

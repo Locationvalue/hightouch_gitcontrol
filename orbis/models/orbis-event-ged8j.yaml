@@ -1,0 +1,6 @@
+name: ORBIS_EVENT_ブランドページを表示
+source: orbis-poc
+type: table
+tableName: PUBLIC.ブランドページを表示
+isSchema: false
+primaryKey: ID

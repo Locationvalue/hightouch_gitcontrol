@@ -1,0 +1,44 @@
+model: orbis-event-2209-3g6vp
+destination: orbis-poc-hszov
+config:
+  type: event
+  mappings:
+    - to: platform
+      from: PLATFORM
+      type: standard
+    - to: os_name
+      from: OS_NAME
+      type: standard
+    - to: os_version
+      from: OS_VERSION
+      type: standard
+    - to: device_model
+      from: DEVICE_MODEL
+      type: standard
+    - to: city
+      from: CITY
+      type: standard
+  eventName: セルフスキンチェックの結果を表示
+  userIdFrom: USER_ID
+  deviceIdFrom: DEVICE_ID
+  configVersion: 0
+  timestampFrom: TIME
+  customMappings:
+    - to: パラメータ
+      from: パラメータ
+      type: standard
+    - to: 直後ページURL
+      from: 直後ページURL
+      type: standard
+    - to: 直前ページURL
+      from: 直前ページURL
+      type: standard
+    - to: URL
+      from: URL
+      type: standard
+    - to: ヒット滞在時間
+      from: ヒット滞在時間
+      type: standard
+schedule:
+  type: manual
+schedulePaused: true

@@ -1,0 +1,6 @@
+name: ORBIS_EVENT_特集ページを表示
+source: orbis-poc
+type: table
+tableName: PUBLIC.特集ページを表示
+isSchema: false
+primaryKey: ID

@@ -1,0 +1,6 @@
+name: ORBIS_TEST_ダミーUP
+source: orbis-poc
+type: table
+tableName: PUBLIC.DUMMY_USER_PROPERTIES
+isSchema: false
+primaryKey: 顧客番号

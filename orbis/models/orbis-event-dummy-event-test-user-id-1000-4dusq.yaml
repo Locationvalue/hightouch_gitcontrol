@@ -1,0 +1,6 @@
+name: ORBIS_EVENT_DUMMY_EVENT_TEST_USER_ID_1000
+source: orbis-poc
+type: table
+tableName: PUBLIC.DUMMY_EVENT_TEST_USER_ID_1000
+isSchema: false
+primaryKey: 顧客番号

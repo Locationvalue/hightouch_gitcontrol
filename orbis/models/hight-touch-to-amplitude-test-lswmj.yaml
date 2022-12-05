@@ -1,0 +1,6 @@
+name: HightTouch to Amplitude TEST
+source: b2-c-e-commerce-y0hyw
+type: table
+tableName: public.events
+isSchema: false
+primaryKey: customer_id

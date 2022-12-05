@@ -1,0 +1,6 @@
+name: ORBIS_EVENT_2209_セルフスキンチェックの結果を表示
+source: orbis-poc
+type: table
+tableName: PUBLIC.セルフスキンチェックの結果を表示_202209
+isSchema: false
+primaryKey: ID

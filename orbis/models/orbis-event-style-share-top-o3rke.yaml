@@ -1,0 +1,6 @@
+name: ORBIS_EVENT_Style Share TOPを表示
+source: orbis-poc
+type: table
+tableName: PUBLIC.Style_Share_TOPを表示
+isSchema: false
+primaryKey: ID

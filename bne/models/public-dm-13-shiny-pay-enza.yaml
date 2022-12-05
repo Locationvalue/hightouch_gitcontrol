@@ -1,0 +1,6 @@
+name: PUBLIC.DM_13_shiny_pay_enza
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_13_shiny_pay_enza
+isSchema: false
+primaryKey: ID

@@ -1,0 +1,6 @@
+name: PUBLIC.DM_03_million_pay
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_03_million_pay
+isSchema: false
+primaryKey: ID

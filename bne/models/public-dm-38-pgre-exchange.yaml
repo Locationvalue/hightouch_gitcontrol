@@ -1,0 +1,6 @@
+name: PUBLIC.DM_38_pgre_exchange
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_38_pgre_exchange
+isSchema: false
+primaryKey: ID

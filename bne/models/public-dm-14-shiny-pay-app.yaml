@@ -1,0 +1,6 @@
+name: PUBLIC.DM_14_shiny_pay_app
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_14_shiny_pay_app
+isSchema: false
+primaryKey: ID

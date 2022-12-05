@@ -1,0 +1,6 @@
+name: PUBLIC.DM_37_pgre_login
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_37_pgre_login
+isSchema: false
+primaryKey: ID

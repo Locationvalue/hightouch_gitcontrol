@@ -1,0 +1,6 @@
+name: PUBLIC.DM_23_sidem_register
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_23_sidem_register
+isSchema: false
+primaryKey: ID

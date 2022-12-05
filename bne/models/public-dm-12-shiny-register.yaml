@@ -1,0 +1,6 @@
+name: PUBLIC.DM_12_shiny_register
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_12_shiny_register
+isSchema: false
+primaryKey: ID

@@ -1,0 +1,6 @@
+name: PUBLIC.DM_24_sidem_pay
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_24_sidem_pay
+isSchema: false
+primaryKey: ID

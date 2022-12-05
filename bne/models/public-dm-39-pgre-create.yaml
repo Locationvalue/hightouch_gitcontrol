@@ -1,0 +1,6 @@
+name: PUBLIC.DM_39_pgre_create
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_39_pgre_create
+isSchema: false
+primaryKey: ID

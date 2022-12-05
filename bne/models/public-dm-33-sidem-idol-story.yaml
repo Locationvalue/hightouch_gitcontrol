@@ -1,0 +1,6 @@
+name: PUBLIC.DM_33_sidem_idol_story
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_33_sidem_idol_story
+isSchema: false
+primaryKey: ID

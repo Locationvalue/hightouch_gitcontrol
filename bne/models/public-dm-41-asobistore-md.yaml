@@ -1,0 +1,6 @@
+name: PUBLIC.DM_41_asobistore_md
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_41_asobistore_md
+isSchema: false
+primaryKey: ID

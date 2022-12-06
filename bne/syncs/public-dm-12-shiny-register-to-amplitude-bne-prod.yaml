@@ -24,7 +24,7 @@ config:
     - to: ユーザーID（enza）
       from: pf_user_id
       type: standard
-    - to: ユーザーID（シャニマス）
+    - to: service_user_id
       from: service_user_id
       type: standard
     - to: サービス名

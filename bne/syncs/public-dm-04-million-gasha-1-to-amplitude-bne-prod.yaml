@@ -1,0 +1,54 @@
+model: public-dm-04-million-gasha-1
+destination: amplitude-bne-prod
+config:
+  type: event
+  mappings: []
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: 一度に回した回数
+      from: bulk_num
+      type: standard
+    - to: 有償ガシャのフラグ
+      from: is_paid_jewel_only
+      type: standard
+    - to: 使用したアイテム名
+      from: item_name
+      type: standard
+    - to: 使用したアイテムID
+      from: mst_item_id
+      type: standard
+    - to: 単発or10連
+      from: draw_type
+      type: standard
+    - to: 決済種別
+      from: product_type
+      type: standard
+    - to: ガシャ終了日時（UTC）
+      from: end_date
+      type: standard
+    - to: ガシャ開始日時（UTC）
+      from: begin_date
+      type: standard
+    - to: ガシャ名
+      from: gasha_name
+      type: standard
+    - to: ガシャID
+      from: mst_gasha_id
+      type: standard
+    - to: BNID
+      from: bnid
+      type: standard
+    - to: service_user_id
+      from: service_user_id
+      type: standard
+    - to: サービス名
+      from: service_name
+      type: standard
+  skipUserProperty: true
+schedule:
+  type: manual
+schedulePaused: false

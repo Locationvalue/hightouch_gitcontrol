@@ -2,7 +2,13 @@ model: public-dm-41-asobistore-md
 destination: amplitude-bne-prod
 config:
   type: event
-  mappings: []
+  mappings:
+    - to: price
+      from: price
+      type: standard
+    - to: quantity
+      from: quantity
+      type: standard
   eventName:
     column: event_type
   userIdFrom: user_id
@@ -26,12 +32,6 @@ config:
       type: standard
     - to: 合計額
       from: total_price
-      type: standard
-    - to: quantity
-      from: quantity
-      type: standard
-    - to: price
-      from: price
       type: standard
     - to: 注文番号
       from: order_id

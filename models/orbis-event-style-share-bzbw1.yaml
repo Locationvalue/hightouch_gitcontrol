@@ -1,6 +1,0 @@
-name: ORBIS_EVENT_Style Shareのコンテンツを表示
-source: orbis-poc
-type: table
-tableName: PUBLIC.Style_Shareのコンテンツを表示
-isSchema: false
-primaryKey: ID

@@ -1,6 +1,0 @@
-name: ORBIS_EVENT_お悩み解決ベースメイクチェックの肌悩み別ページを表示
-source: orbis-poc
-type: table
-tableName: PUBLIC.お悩み解決ベースメイクチェックの肌悩み別ページを表示
-isSchema: false
-primaryKey: ID

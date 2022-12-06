@@ -1,6 +1,0 @@
-name: ORBIS_EVENT_2209_購買（商品毎）
-source: orbis-poc
-type: table
-tableName: PUBLIC.購買（商品毎）_202209
-isSchema: false
-primaryKey: ID

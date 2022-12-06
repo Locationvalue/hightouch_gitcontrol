@@ -1,0 +1,6 @@
+name: PUBLIC.DM_11_shiny_login_3
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_11_shiny_login_3
+isSchema: false
+primaryKey: ID

@@ -1,6 +1,0 @@
-name: ORBIS_EVENT_2209_先行型美容液（ブースター）って何？を表示
-source: orbis-poc
-type: table
-tableName: PUBLIC.先行型美容液（ブースター）って何？を表示_202209
-isSchema: false
-primaryKey: ID

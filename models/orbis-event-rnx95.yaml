@@ -1,6 +1,0 @@
-name: ORBIS_EVENT_ビューティー栄養素チェックを表示
-source: orbis-poc
-type: table
-tableName: PUBLIC.ビューティー栄養素チェックを表示
-isSchema: false
-primaryKey: ID

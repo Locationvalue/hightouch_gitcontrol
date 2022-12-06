@@ -1,6 +1,0 @@
-name: ORBIS_EVENT_DUMMY_6-9
-source: orbis-poc
-type: table
-tableName: PUBLIC.DUMMY_EVENT_USER_ID_202206_202209
-isSchema: false
-primaryKey: ID

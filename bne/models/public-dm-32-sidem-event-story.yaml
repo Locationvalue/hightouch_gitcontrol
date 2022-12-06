@@ -1,0 +1,6 @@
+name: PUBLIC.DM_32_sidem_event_story
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_32_sidem_event_story
+isSchema: false
+primaryKey: ID

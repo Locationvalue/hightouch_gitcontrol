@@ -1,6 +1,0 @@
-name: ORBIS_VIEW_TEST
-source: orbis-poc
-type: table
-tableName: PUBLIC.HIGH_TOUCH_TEST
-isSchema: false
-primaryKey: 受注番号(統合)

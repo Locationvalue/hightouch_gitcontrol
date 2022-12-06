@@ -1,0 +1,6 @@
+name: PUBLIC.DM_20_shiny_training_1
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_20_shiny_training_1
+isSchema: false
+primaryKey: ID

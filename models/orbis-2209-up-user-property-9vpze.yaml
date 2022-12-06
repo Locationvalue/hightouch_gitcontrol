@@ -1,6 +1,0 @@
-name: ORBIS_2209_UP_User Property
-source: orbis-poc
-type: table
-tableName: PUBLIC.USER_PROPERTIES_202209
-isSchema: false
-primaryKey: 顧客番号

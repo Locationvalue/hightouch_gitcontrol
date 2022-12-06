@@ -1,0 +1,6 @@
+name: PUBLIC.DM_31_sidem_main_story
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_31_sidem_main_story
+isSchema: false
+primaryKey: ID

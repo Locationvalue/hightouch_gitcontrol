@@ -1,0 +1,6 @@
+name: PUBLIC.DM_05_million_gasha_detail_1
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_05_million_gasha_detail_1
+isSchema: false
+primaryKey: ID

@@ -1,6 +1,0 @@
-name: ORBIS_EVENT_みんなのクチコミTOPを表示
-source: orbis-poc
-type: table
-tableName: PUBLIC.みんなのクチコミTOPを表示
-isSchema: false
-primaryKey: ID

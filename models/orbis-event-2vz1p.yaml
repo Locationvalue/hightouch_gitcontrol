@@ -1,6 +1,0 @@
-name: ORBIS_EVENT_ベストコスメ受賞一覧を表示
-source: orbis-poc
-type: table
-tableName: PUBLIC.ベストコスメ受賞一覧を表示
-isSchema: false
-primaryKey: ID

@@ -1,6 +1,0 @@
-name: ORBIS_EVENT_キクラボのレポートを表示
-source: orbis-poc
-type: table
-tableName: PUBLIC.キクラボのレポートを表示
-isSchema: false
-primaryKey: ID

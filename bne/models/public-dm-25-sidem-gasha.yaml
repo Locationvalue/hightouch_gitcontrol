@@ -1,0 +1,6 @@
+name: PUBLIC.DM_25_sidem_gasha
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_25_sidem_gasha
+isSchema: false
+primaryKey: ID

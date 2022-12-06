@@ -1,6 +1,0 @@
-name: ORBIS_EVENT_購買（商品毎）_再取り込み
-source: orbis-poc
-type: table
-tableName: PUBLIC.購買（商品毎）_再取り込み
-isSchema: false
-primaryKey: ID

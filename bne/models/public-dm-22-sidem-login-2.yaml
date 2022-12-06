@@ -1,0 +1,6 @@
+name: PUBLIC.DM_22_sidem_login_2
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_22_sidem_login_2
+isSchema: false
+primaryKey: ID

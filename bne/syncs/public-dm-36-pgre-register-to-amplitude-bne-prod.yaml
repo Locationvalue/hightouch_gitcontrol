@@ -18,7 +18,7 @@ config:
     - to: BNID
       from: bnid
       type: standard
-    - to: ユーザーID
+    - to: service_user_id
       from: service_user_id
       type: standard
     - to: サービス名

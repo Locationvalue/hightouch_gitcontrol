@@ -2,7 +2,13 @@ model: public-dm-24-sidem-pay
 destination: amplitude-bne-prod
 config:
   type: event
-  mappings: []
+  mappings:
+    - to: price
+      from: price
+      type: standard
+    - to: quantity
+      from: quantity
+      type: standard
   eventName:
     column: event_type
   userIdFrom: user_id
@@ -11,12 +17,6 @@ config:
   customMappings:
     - to: 合計課金額
       from: total_price
-      type: standard
-    - to: quantity
-      from: quantity
-      type: standard
-    - to: price
-      from: price
       type: standard
     - to: アイテム名
       from: item_name

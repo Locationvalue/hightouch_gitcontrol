@@ -1,0 +1,138 @@
+model: public-dm-40-asobistore-ga
+destination: amplitude-bne-prod
+config:
+  type: event
+  mappings: []
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: guid
+      from: hit_customDimension13
+      type: standard
+    - to: カスタマーID（ヒット）
+      from: hit_customDimension12
+      type: standard
+    - to: lang
+      from: hit_customDimension11
+      type: standard
+    - to: リファラー
+      from: hit_customDimension10
+      type: standard
+    - to: カスタマーID
+      from: hit_customDimension8
+      type: standard
+    - to: GTMコンテナID
+      from: hit_customDimension7
+      type: standard
+    - to: GAクライアントID
+      from: hit_customDimension6
+      type: standard
+    - to: client_id
+      from: hit_customDimension5
+      type: standard
+    - to: person_id
+      from: hit_customDimension4
+      type: standard
+    - to: age
+      from: hit_customDimension3
+      type: standard
+    - to: gender
+      from: hit_customDimension2
+      type: standard
+    - to: mbid
+      from: hit_customDimension1
+      type: standard
+    - to: guid
+      from: customDimension13
+      type: standard
+    - to: カスタマーID（ヒット）
+      from: customDimension12
+      type: standard
+    - to: lang
+      from: customDimension11
+      type: standard
+    - to: リファラー
+      from: customDimension10
+      type: standard
+    - to: カスタマーID
+      from: customDimension8
+      type: standard
+    - to: GTMコンテナID
+      from: customDimension7
+      type: standard
+    - to: GAクライアントID
+      from: customDimension6
+      type: standard
+    - to: client_id
+      from: customDimension5
+      type: standard
+    - to: person_id
+      from: customDimension4
+      type: standard
+    - to: age
+      from: customDimension3
+      type: standard
+    - to: gender
+      from: customDimension2
+      type: standard
+    - to: mbid
+      from: customDimension1
+      type: standard
+    - to: 地域
+      from: region
+      type: standard
+    - to: 国
+      from: country
+      type: standard
+    - to: デバイス
+      from: deviceCategory
+      type: standard
+    - to: OS
+      from: operatingSystem
+      type: standard
+    - to: ブラウザ
+      from: browser
+      type: standard
+    - to: hitNumber
+      from: hitNumber
+      type: standard
+    - to: visitNumber
+      from: visitNumber
+      type: standard
+    - to: ホスト名
+      from: hostname
+      type: standard
+    - to: ページPath
+      from: pagePath
+      type: standard
+    - to: タイトルカテゴリ
+      from: title_category
+      type: standard
+    - to: ページタイトル
+      from: pageTitle
+      type: standard
+    - to: visitStartTime
+      from: visitStartTime
+      type: standard
+    - to: visitId
+      from: visitId
+      type: standard
+    - to: fullVisitorId
+      from: fullVisitorId
+      type: standard
+    - to: BNID
+      from: bnid
+      type: standard
+    - to: service_user_id
+      from: service_user_id
+      type: standard
+    - to: サービス名
+      from: service_name
+      type: standard
+  skipUserProperty: true
+schedule:
+  type: manual
+schedulePaused: false

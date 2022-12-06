@@ -1,0 +1,36 @@
+model: public-dm-25-sidem-gasha
+destination: amplitude-bne-prod
+config:
+  type: event
+  mappings: []
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: 有償限定ガシャフラグ
+      from: is_paid_currency_only
+      type: standard
+    - to: ガシャ名
+      from: gasha_name
+      type: standard
+    - to: ガシャID
+      from: gasha_id
+      type: standard
+    - to: 何連ガシャか？(1or10)
+      from: bulk_num
+      type: standard
+    - to: BNID
+      from: bnid
+      type: standard
+    - to: service_user_id
+      from: service_user_id
+      type: standard
+    - to: サービス名
+      from: service_name
+      type: standard
+  skipUserProperty: true
+schedule:
+  type: manual
+schedulePaused: false

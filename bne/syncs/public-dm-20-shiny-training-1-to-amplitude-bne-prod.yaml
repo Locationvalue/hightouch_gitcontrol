@@ -1,0 +1,48 @@
+model: public-dm-20-shiny-training-1
+destination: amplitude-bne-prod
+config:
+  type: event
+  mappings: []
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: 成功種類
+      from: success_type
+      type: standard
+    - to: 後の経験値
+      from: after_exp
+      type: standard
+    - to: 前の経験値
+      from: before_exp
+      type: standard
+    - to: 後のレベル
+      from: after_level
+      type: standard
+    - to: 前のレベル
+      from: before_level
+      type: standard
+    - to: ユーザーサポートアイドルID
+      from: user_support_idol_id
+      type: standard
+    - to: 数量
+      from: num
+      type: standard
+    - to: トレーニングアイテムID
+      from: enhancement_item_id
+      type: standard
+    - to: BNID
+      from: bnid
+      type: standard
+    - to: service_user_id
+      from: service_user_id
+      type: standard
+    - to: サービス名
+      from: service_name
+      type: standard
+  skipUserProperty: true
+schedule:
+  type: manual
+schedulePaused: false

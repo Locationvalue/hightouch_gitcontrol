@@ -1,0 +1,36 @@
+model: public-dm-11-shiny-login-2
+destination: amplitude-bne-prod
+config:
+  type: event
+  mappings: []
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: アプリか否か
+      from: game_app_flg
+      type: standard
+    - to: デバイス種別
+      from: device_type
+      type: standard
+    - to: チュートリアル開始日時（UTC）
+      from: tutorial_started_at
+      type: standard
+    - to: BNID
+      from: bnid
+      type: standard
+    - to: ユーザーID（enza）
+      from: pf_user_id
+      type: standard
+    - to: service_user_id
+      from: service_user_id
+      type: standard
+    - to: サービス名
+      from: service_name
+      type: standard
+  skipUserProperty: true
+schedule:
+  type: manual
+schedulePaused: false

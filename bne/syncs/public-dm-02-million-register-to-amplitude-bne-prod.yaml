@@ -1,0 +1,36 @@
+model: public-dm-02-million-register
+destination: amplitude-bne-prod
+config:
+  type: event
+  mappings: []
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: ipアドレス
+      from: remote_addr
+      type: standard
+    - to: OS名
+      from: os_name
+      type: standard
+    - to: デバイス名
+      from: device_name
+      type: standard
+    - to: ユーザーID(端末ごと)
+      from: platform_user_id
+      type: standard
+    - to: BNID
+      from: bnid
+      type: standard
+    - to: service_user_id
+      from: service_user_id
+      type: standard
+    - to: サービス名
+      from: service_name
+      type: standard
+  skipUserProperty: true
+schedule:
+  type: manual
+schedulePaused: false

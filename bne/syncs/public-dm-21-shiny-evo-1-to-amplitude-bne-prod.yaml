@@ -1,0 +1,48 @@
+model: public-dm-21-shiny-evo-1
+destination: amplitude-bne-prod
+config:
+  type: event
+  mappings: []
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: 後の素材数
+      from: material_after_num
+      type: standard
+    - to: 前の素材数
+      from: material_before_num
+      type: standard
+    - to: 素材のID
+      from: material_content_id
+      type: standard
+    - to: 素材タイプ
+      from: material_content_type
+      type: standard
+    - to: 後の特訓レベル
+      from: after_evolution_stage
+      type: standard
+    - to: 前の特訓レベル
+      from: before_evolution_stage
+      type: standard
+    - to: ユーザーアイドルID
+      from: user_idol_id
+      type: standard
+    - to: アイドルタイプ
+      from: idol_type
+      type: standard
+    - to: BNID
+      from: bnid
+      type: standard
+    - to: service_user_id
+      from: service_user_id
+      type: standard
+    - to: サービス名
+      from: service_name
+      type: standard
+  skipUserProperty: true
+schedule:
+  type: manual
+schedulePaused: false

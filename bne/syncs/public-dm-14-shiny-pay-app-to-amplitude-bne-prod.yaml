@@ -1,0 +1,54 @@
+model: public-dm-14-shiny-pay-app
+destination: amplitude-bne-prod
+config:
+  type: event
+  mappings: []
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: 購入後の有償ジュエル数
+      from: after_billed_num
+      type: standard
+    - to: 購入前の有償ジュエル数
+      from: before_billed_num
+      type: standard
+    - to: 購入後のジュエル数
+      from: after_num
+      type: standard
+    - to: 購入前のジュエル数
+      from: before_num
+      type: standard
+    - to: 購入したジュエルの個数
+      from: billed_num
+      type: standard
+    - to: 合計課金額
+      from: total_price
+      type: standard
+    - to: quantity
+      from: quantity
+      type: standard
+    - to: price
+      from: price
+      type: standard
+    - to: アイテム名
+      from: title
+      type: standard
+    - to: プロダクトID
+      from: product_id
+      type: standard
+    - to: BNID
+      from: bnid
+      type: standard
+    - to: service_user_id
+      from: service_user_id
+      type: standard
+    - to: サービス名
+      from: service_name
+      type: standard
+  skipUserProperty: true
+schedule:
+  type: manual
+schedulePaused: false

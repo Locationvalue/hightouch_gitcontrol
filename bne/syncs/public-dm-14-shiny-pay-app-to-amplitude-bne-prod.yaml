@@ -2,7 +2,16 @@ model: public-dm-14-shiny-pay-app
 destination: amplitude-bne-prod
 config:
   type: event
-  mappings: []
+  mappings:
+    - to: price
+      from: price
+      type: standard
+    - to: quantity
+      from: quantity
+      type: standard
+    - to: productId
+      from: product_id
+      type: standard
   eventName:
     column: event_type
   userIdFrom: user_id
@@ -27,17 +36,8 @@ config:
     - to: 合計課金額
       from: total_price
       type: standard
-    - to: quantity
-      from: quantity
-      type: standard
-    - to: price
-      from: price
-      type: standard
     - to: アイテム名
       from: title
-      type: standard
-    - to: プロダクトID
-      from: product_id
       type: standard
     - to: BNID
       from: bnid

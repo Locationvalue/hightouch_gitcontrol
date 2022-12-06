@@ -1,0 +1,36 @@
+model: public-dm-35-sidem-extra-story
+destination: amplitude-bne-prod
+config:
+  type: event
+  mappings: []
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: スキップフラグ
+      from: is_skip
+      type: standard
+    - to: セクションID
+      from: home_story_section_id
+      type: standard
+    - to: エピソードID
+      from: home_story_episode_id
+      type: standard
+    - to: チャプターID
+      from: home_story_chapter_id
+      type: standard
+    - to: BNID
+      from: bnid
+      type: standard
+    - to: service_user_id
+      from: service_user_id
+      type: standard
+    - to: サービス名
+      from: service_name
+      type: standard
+  skipUserProperty: true
+schedule:
+  type: manual
+schedulePaused: false

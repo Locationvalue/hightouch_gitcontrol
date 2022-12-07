@@ -1,0 +1,48 @@
+model: public-dm-10-million-lesson-2
+destination: amplitude-bne-prod
+config:
+  type: event
+  mappings: []
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: スキルレベル
+      from: skill_lv
+      type: standard
+    - to: マスターランク
+      from: master_rank
+      type: standard
+    - to: レアリティ
+      from: rarity
+      type: standard
+    - to: カードレベル
+      from: card_lv
+      type: standard
+    - to: 覚醒フラグ
+      from: awakened
+      type: standard
+    - to: カード名
+      from: card_name
+      type: standard
+    - to: カードID
+      from: mst_card_id
+      type: standard
+    - to: イベント種別
+      from: event
+      type: standard
+    - to: BNID
+      from: bnid
+      type: standard
+    - to: service_user_id
+      from: service_user_id
+      type: standard
+    - to: サービス名
+      from: service_name
+      type: standard
+  skipUserProperty: true
+schedule:
+  type: manual
+schedulePaused: false

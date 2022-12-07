@@ -45,4 +45,4 @@ config:
   skipUserProperty: true
 schedule:
   type: manual
-schedulePaused: false
+schedulePaused: true

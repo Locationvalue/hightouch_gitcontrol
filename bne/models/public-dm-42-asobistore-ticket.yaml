@@ -1,0 +1,6 @@
+name: PUBLIC.DM_42_asobistore_ticket
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_42_asobistore_ticket
+isSchema: false
+primaryKey: ID

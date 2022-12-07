@@ -1,0 +1,6 @@
+name: PUBLIC.DM_27_sidem_live_2
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_27_sidem_live_2
+isSchema: false
+primaryKey: ID

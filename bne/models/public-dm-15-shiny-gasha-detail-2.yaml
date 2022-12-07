@@ -1,0 +1,6 @@
+name: PUBLIC.DM_15_shiny_gasha_detail_2
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_15_shiny_gasha_detail_2
+isSchema: false
+primaryKey: ID

@@ -1,0 +1,6 @@
+name: PUBLIC.DM_19_shiny_mission_4
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_19_shiny_mission_4
+isSchema: false
+primaryKey: ID

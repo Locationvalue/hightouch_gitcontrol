@@ -1,0 +1,6 @@
+name: PUBLIC.DM_30_sidem_mission_3
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_30_sidem_mission_3
+isSchema: false
+primaryKey: ID

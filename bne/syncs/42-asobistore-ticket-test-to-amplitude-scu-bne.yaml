@@ -1,0 +1,33 @@
+model: 42-asobistore-ticket-test
+destination: amplitude-scu-bne
+config:
+  type: event
+  mappings: []
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: 参加日程
+      from: day
+      type: standard
+    - to: 参加方法
+      from: type
+      type: standard
+    - to: ライブ名称
+      from: live_name
+      type: standard
+    - to: BNID
+      from: bnid
+      type: standard
+    - to: service_user_id
+      from: service_user_id
+      type: standard
+    - to: サービス名
+      from: service_name
+      type: standard
+  skipUserProperty: true
+schedule:
+  type: manual
+schedulePaused: false

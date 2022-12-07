@@ -1,0 +1,117 @@
+model: public-dm-15-shiny-gasha-detail-1
+destination: amplitude-bne-prod
+config:
+  type: event
+  mappings: []
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: 獲得アイテム10_アイテム名称
+      from: prize_name_10
+      type: standard
+    - to: 獲得アイテム10_アイテムID
+      from: prize_id_10
+      type: standard
+    - to: 獲得アイテム10_レア度
+      from: rarity_10
+      type: standard
+    - to: 獲得アイテム09_アイテム名称
+      from: prize_name_09
+      type: standard
+    - to: 獲得アイテム09_アイテムID
+      from: prize_id_09
+      type: standard
+    - to: 獲得アイテム09_レア度
+      from: rarity_09
+      type: standard
+    - to: 獲得アイテム08_アイテム名称
+      from: prize_name_08
+      type: standard
+    - to: 獲得アイテム08_アイテムID
+      from: prize_id_08
+      type: standard
+    - to: 獲得アイテム08_レア度
+      from: rarity_08
+      type: standard
+    - to: 獲得アイテム07_アイテム名称
+      from: prize_name_07
+      type: standard
+    - to: 獲得アイテム07_アイテムID
+      from: prize_id_07
+      type: standard
+    - to: 獲得アイテム07_レア度
+      from: rarity_07
+      type: standard
+    - to: 獲得アイテム06_アイテム名称
+      from: prize_name_06
+      type: standard
+    - to: 獲得アイテム06_アイテムID
+      from: prize_id_06
+      type: standard
+    - to: 獲得アイテム06_レア度
+      from: rarity_06
+      type: standard
+    - to: 獲得アイテム05_アイテム名称
+      from: prize_name_05
+      type: standard
+    - to: 獲得アイテム05_アイテムID
+      from: prize_id_05
+      type: standard
+    - to: 獲得アイテム05_レア度
+      from: rarity_05
+      type: standard
+    - to: 獲得アイテム04_アイテム名称
+      from: prize_name_04
+      type: standard
+    - to: 獲得アイテム04_アイテムID
+      from: prize_id_04
+      type: standard
+    - to: 獲得アイテム04_レア度
+      from: rarity_04
+      type: standard
+    - to: 獲得アイテム03_アイテム名称
+      from: prize_name_03
+      type: standard
+    - to: 獲得アイテム03_アイテムID
+      from: prize_id_03
+      type: standard
+    - to: 獲得アイテム03_レア度
+      from: rarity_03
+      type: standard
+    - to: 獲得アイテム02_アイテム名称
+      from: prize_name_02
+      type: standard
+    - to: 獲得アイテム02_アイテムID
+      from: prize_id_02
+      type: standard
+    - to: 獲得アイテム02_レア度
+      from: rarity_02
+      type: standard
+    - to: 獲得アイテム01_アイテム名称
+      from: prize_name_01
+      type: standard
+    - to: 獲得アイテム01_アイテムID
+      from: prize_id_01
+      type: standard
+    - to: 獲得アイテム01_レア度
+      from: rarity_01
+      type: standard
+    - to: 獲得最高レア度
+      from: max_rarity
+      type: standard
+    - to: BNID
+      from: bnid
+      type: standard
+    - to: service_user_id
+      from: service_user_id
+      type: standard
+    - to: サービス名
+      from: service_name
+      type: standard
+  skipUserProperty: true
+schedule:
+  type: manual
+schedulePaused: false

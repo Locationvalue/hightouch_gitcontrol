@@ -1,0 +1,36 @@
+model: public-dm-29-sidem-growth-2
+destination: amplitude-bne-prod
+config:
+  type: event
+  mappings: []
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: レア度
+      from: rarity
+      type: standard
+    - to: イベント種別
+      from: event
+      type: standard
+    - to: カード名
+      from: card_name
+      type: standard
+    - to: カードID
+      from: card_id
+      type: standard
+    - to: BNID
+      from: bnid
+      type: standard
+    - to: service_user_id
+      from: service_user_id
+      type: standard
+    - to: サービス名
+      from: service_name
+      type: standard
+  skipUserProperty: true
+schedule:
+  type: manual
+schedulePaused: false

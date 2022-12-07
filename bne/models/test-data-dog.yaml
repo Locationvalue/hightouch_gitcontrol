@@ -1,0 +1,11 @@
+name: TEST_data_dog
+source: snowflake-bne-poc
+type: raw_sql
+rawSql: |-
+  select 
+    *
+  from
+    PUBLIC."DM_21_shiny_evo"
+  limit 1000
+isSchema: false
+primaryKey: ID

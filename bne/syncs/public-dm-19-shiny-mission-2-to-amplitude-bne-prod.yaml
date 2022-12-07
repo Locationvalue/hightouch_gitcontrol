@@ -1,0 +1,42 @@
+model: public-dm-19-shiny-mission-2
+destination: amplitude-bne-prod
+config:
+  type: event
+  mappings: []
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: レポートステータス
+      from: report_status
+      type: standard
+    - to: 最終進行度
+      from: progress_max
+      type: standard
+    - to: 進行度
+      from: progress
+      type: standard
+    - to: ステータス
+      from: status
+      type: standard
+    - to: ミッションID
+      from: mission_id
+      type: standard
+    - to: ミッションタイプ
+      from: mission_type
+      type: standard
+    - to: BNID
+      from: bnid
+      type: standard
+    - to: service_user_id
+      from: service_user_id
+      type: standard
+    - to: サービス名
+      from: service_name
+      type: standard
+  skipUserProperty: true
+schedule:
+  type: manual
+schedulePaused: false

@@ -1,0 +1,59 @@
+model: test-data-dog
+destination: amplitude-scu-bne
+config:
+  type: event
+  mappings: []
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: material_after_num
+      from: material_after_num
+      type: standard
+    - to: material_before_num
+      from: material_before_num
+      type: standard
+    - to: material_content_id
+      from: material_content_id
+      type: standard
+    - to: material_content_type
+      from: material_content_type
+      type: standard
+    - to: after_evolution_stage
+      from: after_evolution_stage
+      type: standard
+    - to: before_evolution_stage
+      from: before_evolution_stage
+      type: standard
+    - to: user_idol_id
+      from: user_idol_id
+      type: standard
+    - to: idol_type
+      from: idol_type
+      type: standard
+    - to: bnid
+      from: bnid
+      type: standard
+    - to: service_user_id
+      from: service_user_id
+      type: standard
+    - to: time
+      from: time
+      type: standard
+    - to: user_id
+      from: user_id
+      type: standard
+    - to: event_type
+      from: event_type
+      type: standard
+    - to: service_name
+      from: service_name
+      type: standard
+    - to: ID
+      from: ID
+      type: standard
+schedule:
+  type: manual
+schedulePaused: false

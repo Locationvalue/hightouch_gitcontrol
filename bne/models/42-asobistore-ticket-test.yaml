@@ -1,0 +1,12 @@
+name: 42_asobistore_ticket_test
+source: snowflake-bne-poc
+type: raw_sql
+rawSql: |-
+  select
+  *
+  from
+  PUBLIC."DM_42_asobistore_ticket"
+  limit
+  1000
+isSchema: false
+primaryKey: ID

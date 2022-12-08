@@ -1,0 +1,6 @@
+name: PUBLIC.DM_09_million_mission_6
+source: snowflake-bne-poc
+type: table
+tableName: PUBLIC.DM_09_million_mission_6
+isSchema: false
+primaryKey: ID

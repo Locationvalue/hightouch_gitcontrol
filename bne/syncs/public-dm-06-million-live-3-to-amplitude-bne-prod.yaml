@@ -1,0 +1,57 @@
+model: public-dm-06-million-live-3
+destination: amplitude-bne-prod
+config:
+  type: event
+  mappings:
+    - to: insert_id
+      from: ID
+      type: standard
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: コンボ数
+      from: combo
+      type: standard
+    - to: オートライブフラグ
+      from: is_auto_live
+      type: standard
+    - to: 消費元気
+      from: vitality
+      type: standard
+    - to: ハイスコアフラグ
+      from: is_high_score
+      type: standard
+    - to: コンティニュー回数
+      from: retry_count
+      type: standard
+    - to: リタイアフラグ
+      from: retire_flag
+      type: standard
+    - to: コース名
+      from: course_name
+      type: standard
+    - to: コースID（難易度）
+      from: live_course_id
+      type: standard
+    - to: 曲名
+      from: song_name
+      type: standard
+    - to: 曲ID
+      from: mst_song_id
+      type: standard
+    - to: BNID
+      from: bnid
+      type: standard
+    - to: service_user_id
+      from: service_user_id
+      type: standard
+    - to: サービス名
+      from: service_name
+      type: standard
+  skipUserProperty: true
+schedule:
+  type: manual
+schedulePaused: false

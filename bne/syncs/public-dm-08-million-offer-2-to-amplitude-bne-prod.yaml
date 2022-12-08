@@ -1,0 +1,33 @@
+model: public-dm-08-million-offer-2
+destination: amplitude-bne-prod
+config:
+  type: event
+  mappings:
+    - to: insert_id
+      from: ID
+      type: standard
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: オファーID
+      from: mst_offer_id
+      type: standard
+    - to: カードIDリスト
+      from: mst_card_id_list
+      type: standard
+    - to: BNID
+      from: bnid
+      type: standard
+    - to: service_user_id
+      from: service_user_id
+      type: standard
+    - to: サービス名
+      from: service_name
+      type: standard
+  skipUserProperty: true
+schedule:
+  type: manual
+schedulePaused: false

@@ -2,7 +2,10 @@ model: public-dm-29-sidem-growth-2
 destination: amplitude-bne-prod
 config:
   type: event
-  mappings: []
+  mappings:
+    - to: insert_id
+      from: ID
+      type: standard
   eventName:
     column: event_type
   userIdFrom: user_id

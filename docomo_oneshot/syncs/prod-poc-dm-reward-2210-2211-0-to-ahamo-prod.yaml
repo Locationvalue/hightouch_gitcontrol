@@ -1,5 +1,5 @@
 model: prod-poc-dm-reward-2210-2211-0
-destination: ahamo-test
+destination: ahamo-prod
 config:
   type: event
   mappings:
@@ -59,4 +59,4 @@ config:
       type: standard
 schedule:
   type: manual
-schedulePaused: true
+schedulePaused: false

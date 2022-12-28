@@ -9,7 +9,6 @@ config:
   eventName:
     column: event_type
   userIdFrom: user_id
-  configVersion: 0
   timestampFrom: time
   customMappings:
     - to: procdate

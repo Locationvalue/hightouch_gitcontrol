@@ -1,4 +1,4 @@
-name: POC.DM_REWARD_2210_2211_3
+name: prod_POC.DM_REWARD_2210_2211_3
 source: snowflake
 type: raw_sql
 rawSql: |-

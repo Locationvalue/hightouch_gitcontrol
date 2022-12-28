@@ -1,0 +1,29 @@
+name: prod_POC.DM_ACHIEVEMENT_2210_2211_8
+source: snowflake
+type: raw_sql
+rawSql: |-
+  SELECT
+          id,
+          '[ahamo]クエスト達成' AS "event_type",
+          DM_ACHIEVEMENT_2210_2211.acctid AS "user_id",
+          EXTRACT(EPOCH from CONVERT_TIMEZONE('Asia/Tokyo', 'UTC', TIMESTAMP_TS)) AS "time",
+          DM_ACHIEVEMENT_2210_2211.SERVICE_NAME AS "Service_Name",
+          DM_ACHIEVEMENT_2210_2211.DATE AS "Date",
+          DM_ACHIEVEMENT_2210_2211.comnid AS "comnid",
+          DM_ACHIEVEMENT_2210_2211.mediaID AS "mediaID",
+          DM_ACHIEVEMENT_2210_2211.serviceID AS "serviceID",
+          DM_ACHIEVEMENT_2210_2211.missiongroupid AS "missiongrID",
+          DM_ACHIEVEMENT_2210_2211.missionID AS "missionID",
+          DM_ACHIEVEMENT_2210_2211.missionstatuskind AS "missionkind",
+          DM_ACHIEVEMENT_2210_2211.operateid AS "operateid",
+          DM_ACHIEVEMENT_2210_2211.conditionid AS "conditionid",
+          DM_ACHIEVEMENT_2210_2211.requirednum AS "requirednum",
+          DM_ACHIEVEMENT_2210_2211.operatenum AS "operatenum",
+          DM_ACHIEVEMENT_2210_2211.progressnum AS "progressnum",
+          DM_ACHIEVEMENT_2210_2211.missonconditionachievementflag AS "missonconditionachievementflag",
+          DM_ACHIEVEMENT_2210_2211.missionactivationflag AS "missionactivationflag",
+          DM_ACHIEVEMENT_2210_2211.missionachievementflag AS "missionachievementflag",
+          DM_ACHIEVEMENT_2210_2211.procdate AS "procdate"
+  FROM POC.DM_ACHIEVEMENT_2210_2211_8 AS "DM_ACHIEVEMENT_2210_2211"
+isSchema: false
+primaryKey: ID

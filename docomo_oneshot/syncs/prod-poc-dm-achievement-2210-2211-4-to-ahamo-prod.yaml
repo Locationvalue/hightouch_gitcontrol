@@ -1,0 +1,68 @@
+model: prod-dm-achievement-2210-2211-4
+destination: ahamo-prod
+config:
+  type: event
+  mappings:
+    - to: insert_id
+      from: ID
+      type: standard
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: procdate
+      from: procdate
+      type: standard
+    - to: missionachievementflag
+      from: missionachievementflag
+      type: standard
+    - to: missionactivationflag
+      from: missionactivationflag
+      type: standard
+    - to: missonconditionachievementflag
+      from: missonconditionachievementflag
+      type: standard
+    - to: progressnum
+      from: progressnum
+      type: standard
+    - to: operatenum
+      from: operatenum
+      type: standard
+    - to: requirednum
+      from: requirednum
+      type: standard
+    - to: conditionid
+      from: conditionid
+      type: standard
+    - to: operateid
+      from: operateid
+      type: standard
+    - to: missionkind
+      from: missionkind
+      type: standard
+    - to: missionID
+      from: missionID
+      type: standard
+    - to: missiongrID
+      from: missiongrID
+      type: standard
+    - to: serviceID
+      from: serviceID
+      type: standard
+    - to: mediaID
+      from: mediaID
+      type: standard
+    - to: comnid
+      from: comnid
+      type: standard
+    - to: Date
+      from: Date
+      type: standard
+    - to: Service_Name
+      from: Service_Name
+      type: standard
+schedule:
+  type: manual
+schedulePaused: false

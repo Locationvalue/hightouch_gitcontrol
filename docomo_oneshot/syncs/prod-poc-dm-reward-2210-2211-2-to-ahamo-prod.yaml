@@ -1,0 +1,62 @@
+model: prod-poc-dm-reward-2210-2211-2
+destination: ahamo-test
+config:
+  type: event
+  mappings:
+    - to: insert_id
+      from: ID
+      type: standard
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: procdate
+      from: procdate
+      type: standard
+    - to: earnerwardnum
+      from: earnerwardnum
+      type: standard
+    - to: reward
+      from: reward
+      type: standard
+    - to: rewardkind
+      from: rewardkind
+      type: standard
+    - to: rewardresult
+      from: rewardresult
+      type: standard
+    - to: missionID
+      from: missionID
+      type: standard
+    - to: missiongrID
+      from: missiongrID
+      type: standard
+    - to: AndroidID
+      from: AndroidID
+      type: standard
+    - to: idfv
+      from: idfv
+      type: standard
+    - to: adidentifier
+      from: adidentifier
+      type: standard
+    - to: serviceID
+      from: serviceID
+      type: standard
+    - to: mediaID
+      from: mediaID
+      type: standard
+    - to: comnid
+      from: comnid
+      type: standard
+    - to: Date
+      from: Date
+      type: standard
+    - to: Service_Name
+      from: Service_Name
+      type: standard
+schedule:
+  type: manual
+schedulePaused: true

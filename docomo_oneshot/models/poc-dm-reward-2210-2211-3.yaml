@@ -1,0 +1,27 @@
+name: POC.DM_REWARD_2210_2211_3
+source: snowflake
+type: raw_sql
+rawSql: |-
+  SELECT
+          id,
+          '[ahamo]クエスト報酬獲得' AS "event_type",
+          DM_REWARD_2210_2211.acctid AS "user_id",
+          EXTRACT(EPOCH from CONVERT_TIMEZONE('Asia/Tokyo', 'UTC', TIMESTAMP_TS)) AS "time",
+          DM_REWARD_2210_2211.SERVICE_NAME AS "Service_Name",
+          DM_REWARD_2210_2211.DATE AS "Date",
+          DM_REWARD_2210_2211.comnid AS "comnid",
+          DM_REWARD_2210_2211.mediaID AS "mediaID",
+          DM_REWARD_2210_2211.serviceID AS "serviceID",
+          DM_REWARD_2210_2211.adidentifier AS "adidentifier",
+          DM_REWARD_2210_2211.idfv AS "idfv",
+          DM_REWARD_2210_2211.AndroidID AS "AndroidID",
+          DM_REWARD_2210_2211.missiongroupid AS "missiongrID",
+          DM_REWARD_2210_2211.missionID AS "missionID",
+          DM_REWARD_2210_2211.rewardresult AS "rewardresult",
+          DM_REWARD_2210_2211.rewardkind AS "rewardkind",
+          DM_REWARD_2210_2211.reward AS "reward",
+          DM_REWARD_2210_2211.earnerwardnum AS "earnerwardnum",
+          DM_REWARD_2210_2211.procdate AS "procdate"
+  FROM POC.DM_REWARD_2210_2211_3 AS "DM_REWARD_2210_2211"
+isSchema: false
+primaryKey: ID

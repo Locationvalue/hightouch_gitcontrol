@@ -2,7 +2,10 @@ model: test-dm-reward-2210-2211
 destination: ahamo-test
 config:
   type: event
-  mappings: []
+  mappings:
+    - to: insert_id
+      from: ID
+      type: standard
   eventName:
     column: event_type
   userIdFrom: user_id

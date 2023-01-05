@@ -3,7 +3,6 @@ source: snowflake
 type: raw_sql
 rawSql: |-
   SELECT
-        id,
         '[ahamo]dマガジン契約' AS "event_type",
         DM_DMAGAZINE_GIVE_2210_2211.ACCTID AS "user_id",
         EXTRACT(EPOCH from CONVERT_TIMEZONE('Asia/Tokyo', 'UTC', ORDER_REGISTRATION_DATE_TS)) AS "time",
@@ -12,6 +11,6 @@ rawSql: |-
         DM_DMAGAZINE_GIVE_2210_2211.USE_CASE_NAME AS "サービス名",
         DM_DMAGAZINE_GIVE_2210_2211.ORDER_REGISTRATION_DAY AS "適用日",
         DM_DMAGAZINE_GIVE_2210_2211.ORDER_REGISTRATION_DATE AS "申し込み日"
-  FROM POC.DM_DMAGAZINE_GIVE_2210_2211
+  FROM DM_DMAGAZINE_GIVE_2210_2211
 isSchema: false
 primaryKey: ID

@@ -1,0 +1,38 @@
+model: prod-poc-dm-dpoint-give-history-2210-2211-3
+destination: ahamo-prod
+config:
+  type: event
+  mappings:
+    - to: insert_id
+      from: ID
+      type: standard
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: 有効期限
+      from: 有効期限
+      type: standard
+    - to: 有効期限有無
+      from: 有効期限有無
+      type: standard
+    - to: 付与費目
+      from: 付与費目
+      type: standard
+    - to: 付与ポイント数
+      from: 付与ポイント数
+      type: standard
+    - to: dポイント付与日
+      from: dポイント付与日
+      type: standard
+    - to: Date
+      from: Date
+      type: standard
+    - to: Service_Name
+      from: Service_Name
+      type: standard
+schedule:
+  type: manual
+schedulePaused: false

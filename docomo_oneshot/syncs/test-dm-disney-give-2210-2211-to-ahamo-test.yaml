@@ -1,0 +1,32 @@
+model: test-dm-disney-give-2210-2211
+destination: ahamo-test
+config:
+  type: event
+  mappings:
+    - to: insert_id
+      from: ID
+      type: standard
+  eventName:
+    column: event_type
+  userIdFrom: user_id
+  configVersion: 0
+  timestampFrom: time
+  customMappings:
+    - to: 申し込み日
+      from: 申し込み日
+      type: standard
+    - to: 適用日
+      from: 適用日
+      type: standard
+    - to: サービス名
+      from: サービス名
+      type: standard
+    - to: Date
+      from: Date
+      type: standard
+    - to: Service_Name
+      from: Service_Name
+      type: standard
+schedule:
+  type: manual
+schedulePaused: false

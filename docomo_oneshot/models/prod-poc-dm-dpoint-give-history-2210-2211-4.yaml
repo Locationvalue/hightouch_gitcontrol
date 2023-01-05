@@ -3,6 +3,7 @@ source: snowflake
 type: raw_sql
 rawSql: |-
   SELECT
+        id,
         '[ahamo]dポイント付与' AS "event_type",
         DM_DPOINT_GIVE_HISTORY_2210_2211.ACCTID AS "user_id",
         EXTRACT(EPOCH from CONVERT_TIMEZONE('Asia/Tokyo', 'UTC', DPOINT_GIVE_DAY_TS)) AS "time",
@@ -13,6 +14,6 @@ rawSql: |-
         DM_DPOINT_GIVE_HISTORY_2210_2211.DPOINT_GIVE_HISTORY_DISPLAY_NAME AS "付与費目",
         DM_DPOINT_GIVE_HISTORY_2210_2211.kikan_limit_flg AS "有効期限有無",
         DM_DPOINT_GIVE_HISTORY_2210_2211.PERIOD_USE_LIMITED_DPOINT_MEASURES_END_DAY AS "有効期限"
-  FROM DM_DPOINT_GIVE_HISTORY_2210_2211_4 AS "DM_DPOINT_GIVE_HISTORY_2210_2211"
+  FROM POC.DM_DPOINT_GIVE_HISTORY_2210_2211_4 AS "DM_DPOINT_GIVE_HISTORY_2210_2211"
 isSchema: false
 primaryKey: ID
